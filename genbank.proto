@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package gbparse;
+option go_package = ".;gbparse";
 
 message Genbank {
   string LOCUS = 1;
@@ -35,6 +36,9 @@ message Feature {
   string START = 4;
   string STOP = 5;
   repeated Qualifier QUALIFIERS = 6;
+  string ID = 7;
+  string ACCESSION = 8;
+  string ACCESSION_ID = 9;
 }
 
 message Qualifier{

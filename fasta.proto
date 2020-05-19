@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package gbparse;
+option go_package = ".;gbparse";
 
 message Fasta {
   string HEADER = 1;
