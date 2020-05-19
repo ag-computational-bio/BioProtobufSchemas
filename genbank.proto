@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package genbankproto;
-option go_package = ".;genbankproto";
+package bioproto;
+option go_package = ".;bioproto";
 
 message Genbank {
   string LOCUS = 1;

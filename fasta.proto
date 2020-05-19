@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package fastaproto;
-option go_package = ".;fastaproto";
+package bioproto;
+option go_package = ".;bioproto";
 
 message Fasta {
   string HEADER = 1;
