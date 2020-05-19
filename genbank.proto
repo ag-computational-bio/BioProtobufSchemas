@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package gbparse;
-option go_package = ".;gbparse";
+package genbankproto;
+option go_package = ".;genbankproto";
 
 message Genbank {
   string LOCUS = 1;
