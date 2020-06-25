@@ -1,4 +1,4 @@
-module git.computational.bio.uni-giessen.de/sbeyvers/protobuffiles/go
+module github.com/ag-computational-bio/BioProtobufSchemas/go
 
 go 1.14
 
