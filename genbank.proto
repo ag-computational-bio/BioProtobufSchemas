@@ -33,9 +33,19 @@ message Feature {
   string TYPE = 1;
   bool isCompliment = 2;
   bool isJoined = 3;
-  string START = 4;
-  string STOP = 5;
-  repeated Qualifier QUALIFIERS = 6;
+  string MINPOSITION = 4;
+  string MAXPOSITION = 5;
+  repeated Location LOCATIONS = 6;
+  repeated Qualifier QUALIFIERS = 7;
+}
+
+message Location {
+  bool UNKNOWNLB = 1; // If the lower boundary is not exakt (indicated by > in gbff)
+  bool UNKNOWNUB = 2; // If the upper boundary is not exakt (indicated by < in gbff)
+  bool SITEBETWEEN = 3; // If START and STOP mark a site between to bases (indicated by ^)
+  bool UNKNOWNSINGLESITE = 4; // If START and STOP mark a single base inside the range (indicated by .)
+  int64 START = 5;
+  int64 STOP = 6;
 }
 
 message Qualifier{
