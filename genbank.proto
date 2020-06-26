@@ -34,8 +34,8 @@ message Feature {
   bool isCompliment = 2;
   bool isJoined = 3;
   bool isOrdered = 4;
-  string MINPOSITION = 5;
-  string MAXPOSITION = 6;
+  int64 MINPOSITION = 5;
+  int64 MAXPOSITION = 6;
   repeated Location LOCATIONS = 7;
   repeated Qualifier QUALIFIERS = 8;
 }
