@@ -45,7 +45,7 @@ message Location {
   bool UNKNOWNUB = 2; // If the upper boundary is not exakt (indicated by < in gbff)
   bool SITEBETWEEN = 3; // If START and STOP mark a site between to bases (indicated by ^)
   bool UNKNOWNSINGLESITE = 4; // If START and STOP mark a single base inside the range (indicated by .)
-  string EXTERNALREFERENCE = 5;
+  string EXTERNALREFERENCE = 5; // if the Location is from a different location this contains the accession number
   int64 START = 6;
   int64 STOP = 7;
 }
