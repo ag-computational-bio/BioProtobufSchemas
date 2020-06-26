@@ -33,10 +33,11 @@ message Feature {
   string TYPE = 1;
   bool isCompliment = 2;
   bool isJoined = 3;
-  string MINPOSITION = 4;
-  string MAXPOSITION = 5;
-  repeated Location LOCATIONS = 6;
-  repeated Qualifier QUALIFIERS = 7;
+  bool isOrdered = 4;
+  string MINPOSITION = 5;
+  string MAXPOSITION = 6;
+  repeated Location LOCATIONS = 7;
+  repeated Qualifier QUALIFIERS = 8;
 }
 
 message Location {
