@@ -27,6 +27,7 @@ message Reference {
   string TITLE = 5;
   string JOURNAL = 6;
   string PUBMED = 7;
+  string REMARK = 8;
 }
 
 message Feature {
